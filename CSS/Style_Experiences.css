@@ -1,0 +1,81 @@
+body {
+	background-image: url("Images/photo.jpg");
+	background-repeat: no-repeat;
+	background: cover;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0px;
+}
+
+nav ul {
+	text-align: center;
+	padding-left: 0;
+	background-color: black;
+	margin-top: 0;
+	margin-right: 0px;
+	font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+nav li {
+	text-align: center;
+	display: inline-block;
+}
+
+nav a {
+	border: 1px solid black;
+	padding: 10px;
+	display: block;
+	width: 100px;
+	color: white;
+	font-family: "dejavu" serif;
+}
+
+.Accueil:hover {
+	color: darkred;
+	text-decoration: none;
+}
+#Loisirs {
+	color: white;
+	text-decoration: none;
+}
+#edit-loisirs:hover {
+ color: darkred;
+}
+#Competences {
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+}
+#edit-comp:hover {
+ color: darkred;
+}
+#Experiences {
+	color: white;
+	text-decoration: none;
+}
+#edit-exp:hover {
+ color: darkred;
+}
+#Contact {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+}
+#edit-contact:hover {
+ color: darkred;
+}
+tr {
+	color: white;
+}
+#titre {
+	margin-top: 5%;
+	color: white;
+	text-align: center;
+}
+h1:hover {
+ color: darkred;
+}

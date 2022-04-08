@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html> <!-- on indique que la page sera en html-->
 
 <head>
   <title>Mon ePortfolio</title>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> <!-- codage de la page -->
   <link rel="stylesheet" type="text/css" href="CSS/Style_eportfolio.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta title="ePortfolio"name="Présentation" content="Description">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="CSS/mediaqueries.css"/> <!-- lien vers page mediaqueries -->
 </head>
 
-<body>
-  <header>
-    <img id="img" width="100" heigh="550" src="CSS/Images/ePortfolio(1).gif">
+<body> <!-- début du corps de la page -->
+  <header> <!-- logo dans le haut de la page(header) -->
+    <img id="img" width="200" heigh="550" src="CSS/Images/ePortfolio(1).gif">
   </header>
-  <div class="container-fluid">
+  <div class="container-fluid"> <!-- responsivité grâce à bootstrap, méthode avec un contenant qui possède des lignes et colonnes -->
     <div class="row col-presentation">
-      <div class="col-11 col-xs-12 col-sm-12 col-md-11 col-lg-8">
+      <div class="col-11 col-xs-12 col-sm-12 col-md-11 col-lg-8"> <!-- gérer la disposition de la page en fonction de la taille de l'écran -->
         <div class="bloc">
-          <h1 id="Titre"><span id="edit-Titre">Bienvenue dans mon portfolio</span></h1>
+          <h1 id="Titre"><span id="edit-Titre">Bienvenue dans mon eportfolio</span></h1>
           <nav>
             <ul id="Nav">
-              <li><a class="Loisirs" href="Loisirs.html">Loisirs</a></li>
+              <li><a class="Loisirs" href="https://madshiro.github.io./Loisirs.html">Loisirs</a>
+                <ul class="sousmenu">
+                  <li><a href="https://www.youtube.com/watch?v=atxYe-nOa9w">Bonus!</a></li>
+                </ul>
+              </li>
               <li><a class="Competences" href="Competences.html">Compétences</a></li>
               <li><a class="Accueil" href="#">Accueil</a></li>
               <li><a class="Experiences" href="Experiences.html">Expériences</a></li>
@@ -31,40 +37,42 @@
       </div>
     </div>
 
-    <div class="row col-presentation">
-      <div class="premier col-11 col-xs-10 col-sm-4 col-md-4 col-lg-4">
-        <h3 id="Presentation">Présentation</h3>
-        Je m'appelle Rayan Atrouni, j'ai 19 ans et je suis en 1ère année à l'université Paris descartes
-        en DUT informatique.Je suis né dans le 16ème arrondissement et ai vécu 16ans à Neuilly sur Seine. Puis
+    <div class="row col-presentation"> <!--début du premier bloc -->
+      <div class="premier col-6 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <h3 id="Presentation">Présentation</h3> <!--début du premier bloc -->
+         <article>Je m'appelle Rayan Atrouni, j'ai 19 ans et je suis en 1ère année à l'université Paris descartes
+        en DUT informatique. Je suis né dans le 16ème arrondissement et ai vécu 16ans à Neuilly sur Seine. Puis
         j'ai démenagé à Puteaux et depuis ma vie s'est nettement plus améliorée, que ce soit dans les études ou
         dans la vie quotidienne. Aujourd'hui je vous présente donc mon eportfolio réalisé à l'aide de Bootstrap
-        et avec du HTML/CSS.
+        et avec du HTML/CSS.</article>
       </div>
-    </div>
+    </div> <!--fin premier bloc -->
 
-    <div class="row col-presentation">
-      <div class="deuxième col-4 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="row col-presentation"> <!--début du deuxième bloc -->
+      <div class="deuxième col-6 col-xs-4 col-sm-4 col-md-4 col-lg-4">
         <h3 id="Obj">Objectifs</h3>
-        Pour le premier projet de CDIN, nous devons donc faire un ePortfolio en HTML/CSS en solo en
-        respectant un certain nombre de contraintes.Le ePortfolio est un ensemble de preuves de compétences,
+        <article>Pour le premier projet de CDIN, nous devons donc faire un ePortfolio en HTML/CSS en solo en
+        respectant un certain nombre de contraintes. Le ePortfolio est un ensemble de preuves de compétences,
         sous forme numérique et généralement sur le web, résultant d'une démarche consistant à réfléchir sur
         ses projets (sociaux, professionnels) et définir quelles parties de ces projets communiquer à quels
         publics, et de quelles façons. Puisque nous sommes encore des étudiants, cela nous permettra de
-        communiquer sur notre profil pendant toute notre vie.
+        communiquer sur notre profil pendant toute notre vie.</article>
       </div>
-    </div>
+    </div> <!--fin deuxième bloc -->
 
-    <div class="row col-presentation">
-      <div class="troisième col-4 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="row col-presentation"><!--début du troisième bloc -->
+      <div class="troisième col-6 col-xs-4 col-sm-4 col-md-4 col-lg-4">
         <h3 id="esp">En savoir plus</h3>
-        Je vous invite donc à vous balader sur mon ePortofolio afin de découvrir mon profil.En
+        <article>Je vous invite donc à vous balader sur mon ePortfolio afin de découvrir mon profil.En
         attendant, je vous laisse avec une petite musique d'attente choisi par mes soins.
-        <audio controls src="CSS/Audio/Musique dascenseur Elevator Song .mp3"></audio>
+        <audio controls src="CSS/Audio/Musique dascenseur Elevator Song .mp3"></audio></article> <!-- audio dans le bloc-->
       </div>
-    </div>
-  </div>
+    </div> <!--fin troisième bloc -->
+  </div> <!--fin gros bloc -->
+</body> <!-- fin du corps de la page -->
+<footer> <!-- bas de page -->
+  <div id="basdepage">
+    <p>Copyright© Atrouni Rayan</p>
+</footer>
 
-
-</body>
-
-</html>
+</html> <!-- fin de la page -->
