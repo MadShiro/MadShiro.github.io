@@ -120,4 +120,11 @@ nav a {          /*styliser les différentes parties du menu */
 #edit-contact:hover {
  color: darkred;
 }
-
+#basdepage { /* bannière en bas de page noire*/
+	display: block;
+	border: 1px solid black;
+    margin-top: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

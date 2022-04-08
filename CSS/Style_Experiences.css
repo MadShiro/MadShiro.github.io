@@ -1,9 +1,6 @@
 body {
 	background-image: url("Images/photo.jpg");
 	height: 100%
-	width: 100%;
-	background-size: cover;
-	height: auto;
 }
 
 nav {
@@ -80,4 +77,12 @@ tr {
 }
 h1:hover {
  color: darkred;
+}
+#basdepage { /* bannière en bas de page noire*/
+	display: block;
+	border: 1px solid black;
+    margin-top: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
